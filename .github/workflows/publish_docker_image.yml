@@ -31,7 +31,6 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=schedule,pattern={{date 'YYYYMMDD'}}
             type=raw,value=latest
             type=sha
 
